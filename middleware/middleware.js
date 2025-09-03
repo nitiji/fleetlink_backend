@@ -8,7 +8,6 @@ function verify_token(req, res, next) {
         return res.status(401).json({ message: "Authentication token is required" });
     }
     const token = tokenHeader.split(" ")[1];
-
     // Authorization : token pass from header;
     jwt.verify(token, 'yyyy@123', async function (err, decoded) {
         console.log(err);

@@ -42,4 +42,5 @@ const bookingValidation = async (req, res, next) => {
 		next();
 	}
 };
+
 module.exports={userValidation,vehicleValidation,bookingValidation};

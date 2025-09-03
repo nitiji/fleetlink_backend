@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const { Vehicle } = require("../model/vehicleModel");
-const { Booking } = require("../model/bookingModel");
-const {User} = require("../model/userModel");
 const { verify_token } = require('../middleware/middleware');
 const { register,login} = require('../controller/user');
 const {addVehicle,listVehicle,booking} = require('../controller/vehicle');
